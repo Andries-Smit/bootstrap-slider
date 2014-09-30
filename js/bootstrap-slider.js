@@ -1152,9 +1152,9 @@
 
 		*********************************/
 		// Use AMD loading if possible
-+		if (typeof define === 'function' && define.amd) {
-+                        define(function(){ return Slider; });
-+                } else if($) {
+		if (typeof define === 'function' && define.amd) {
+                       define(function(){ return Slider; });
+                } else if($) {
 			var namespace = $.fn.slider ? 'bootstrapSlider' : 'slider';
 			$.bridget(namespace, Slider);
 		} else {
